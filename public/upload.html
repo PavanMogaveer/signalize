@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNALIZE</title>
+    <link rel="stylesheet" href="utility.css" type="text/css">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="upload.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">SIGNALIZE</h1>
+        <div class="light"></div>
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="about.html"> About </a></li>
+            <li><a href="upload.html"> Upload </a></li>
+            <li><a href="myprofile.html"> My-Profile </a> </li>
+        </ul>
+    </header>
+
+
+    <div class="photo">
+        <form action="">
+
+            <input type="file" id="myFile" name="filename" accept="image/*;capture=camera" required>
+            <button type="submit" onclick="rate()">SUBMIT </button>
+        </form>
+    </div>
+<script>
+    function rate(){
+        document.querySelector(".review").innerHTML=` <h2>Rate and Review</h2>
+        <p>Share your experience so that we can improve it.</p>
+        <form action="">
+            <select name="rating" id="rate">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3" selected>⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <textarea name="" id="" cols="50" rows="3" placeholder="Wirte your review here. . . . . "></textarea>
+            <button type="submit">CONFIRM</button>
+        </form>`
+    }
+</script>
+
+    <div class="review">
+        <!-- <h2>Rate and Review</h2>
+        <p>Share your experience so that we can improve it.</p>
+        <form action="">
+            <select name="rating" id="rate">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3" selected>⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <textarea name="" id="" cols="50" rows="3" placeholder="Wirte your review here. . . . . "></textarea>
+            <button type="submit">CONFIRM</button>
+        </form> -->
+  </div>
+
+
+    <footer>
+        <h1 class="title">SIGNALIZE</h1>
+    </footer>
+</body>
+
+</html>
