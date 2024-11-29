@@ -1,4 +1,0 @@
-login ,register 
-main  with nacigation bar ,along with upload option
-try to give pop up option while in main
-profile display
